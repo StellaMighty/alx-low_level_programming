@@ -10,29 +10,16 @@ int main(void)
 
 	for (i = 1; i <= 100; i++)
 	{
-		if (i % 3 == 0)
-		{
-			printf("fizz");
-			continue;
-		}
-		if  (i % 5 == 0)
-		{
-			printf("Buzz");
-			continue;
-		}
 		if (i % 15 == 0)
-		{
 			printf("FizzBuzz");
-			continue;
-		}
+		else if (i % 3 == 0)
+			printf("Fizz");
+		else if (i % 5 == 0)
+			printf("Buzz");
 		else
-		{
-			printf("%d", i);
-		}
+			printf("%i", i);
 		if (i < 100)
-		{
 			printf(" ");
-		}
 	}
 	printf("\n");
 	return (0);
