@@ -2,6 +2,7 @@
 /**
  * print_triangle - this function uses the character# to
  * print out a triangle
+ * @size: this is the size of the triangle
  * Return: always 0
  */
 void print_triangle(int size)
