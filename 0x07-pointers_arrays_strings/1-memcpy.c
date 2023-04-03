@@ -2,8 +2,11 @@
 
 /**
  * _memcpy - this function copies memory area
+ *
  * @dest: this is the destination area
+ * 
  * @src: this is the source
+ * 
  * @n: the number of bytes
  *
  * Return: returns a pointer
