@@ -3,11 +3,12 @@
 #include <stdlib.h>
 #include <ctype.h>
 /**
- * main - this is the main function
+ * main - adds positive numbers 
  * @argc: this is the counter of the arguments passed
  * @argv: this are the pointers to the arguments passed
  *
- * Return: it returns an integer
+ * Return: if it contains numbers, it returns 0
+ * 	   if there are non digits, it returns 1
  */
 int main(int argc, char *argv[])
 {
@@ -32,6 +33,6 @@ int main(int argc, char *argv[])
 			sum += atoi(argv[i]);
 		}
 	}
-	printf("sum is %d\n", sum);
+	printf("%d\n", sum);
 	return (0);
 }
