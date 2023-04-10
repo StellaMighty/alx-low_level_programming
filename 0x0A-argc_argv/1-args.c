@@ -1,8 +1,8 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
- * main - this is the entry function
+ * main - prints the number of arguments passed
  * @argc: this is the argument count
  * @argv: this is an array of paramenters passed
  *
@@ -11,6 +11,7 @@
 
 int main(int argc, char __attribute__((__unused__)) *argv[])
 {
-	printf("the value of agrc is: %d\n", argc - 1);
-		return (0);
+	printf("%d\n", argc - 1);
+
+	return (0);
 }
