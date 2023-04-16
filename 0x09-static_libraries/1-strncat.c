@@ -1,6 +1,6 @@
 #include"main.h"
 /**
- * *_strncat - this fubction concatenates strings
+ * _strncat - this fubction concatenates strings
  * @dest: destination string
  * @src: source string
  * @n: number of character to be displayed
@@ -14,5 +14,8 @@ char *_strncat(char *dest, char *src, int n)
 	int i;
 
 	for (i = 0; i < n; i++)
+	{
+		dest[i] = src[i];
+	}
 
 }
