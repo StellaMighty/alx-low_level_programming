@@ -2,9 +2,10 @@
 #define DOG_H
 
 /**
- * File:dog.h
- * Auth: Stella Ikang
- * Desc:A header file that defines a struct called dog
+ * struct dog - a dog structure
+ * @name: This is the name of the dog
+ * @age: this is the age of the dog
+ * @owner: this is the owner of the dog
  */
 
 struct dog
@@ -13,4 +14,5 @@ struct dog
 	float age;
 	char *owner;
 };
+
 #endif
