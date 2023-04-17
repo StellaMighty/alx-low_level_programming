@@ -9,4 +9,10 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
+	int destlen;
+	int srclen;
+	int i;
+
+	for (i = 0; i < n; i++)
+
 }

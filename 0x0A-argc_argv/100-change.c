@@ -14,10 +14,10 @@
 int main(int argc, char *argv[])
 {
 
-	int cents;
+	int cents[5];
 	int changea, changeb, sum;
 
-	cents = 10;
+	cents = {25, 10, 5, 2, 1};
 	changea = 0;
 	changeb = 0;
 	sum = 0;
@@ -27,12 +27,24 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	else
+	if (*argv[1] <= 150 || *argv[1] >= 100)
 	{
-		changea = (atoi(argv[1])) / cents;
-		changeb = (atoi(argv[1])) % cents;
-		sum = changea  + changeb;
-		printf("%d\n", sum);
+		changea = (atoi(argv[1])) / cents[0];
+		changeb = (atoi(argv[1])) % cents[0];
 	}
+	if else (argv[1] <= 25 || argv[1] >= 10)
+	{
+		changea = (atoi(argv[1])) / cents[1];
+                changeb = (atoi(argv[1])) % cents[1];
+	}
+	if else (argv[1] <= 10 || argv[1] >= 2)
+        {
+                changea = (atoi(argv[1])) / cents[3];
+                changeb = (atoi(argv[1])) % cents[3];
+        }
+
+	sum = changea  + changeb;
+	printf("%d\n", sum);
+	
 	return (0);
 }
