@@ -1,5 +1,7 @@
 #include "variadic_functions.h"
 #include <stdio.h>
+#include <stdlib.h>
+
 /**
  * print_numbers - this functioin prints numbers
  * @separator: a pointer
@@ -10,14 +12,17 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	unsigned int i;
 	va_list numbers;
 
-	if (*separator == '\0')
-		return;
-
 	va_start(numbers, n);
+
+	if (separator == NULL)
+		separator = "";
+
 	for (i = 0; i < n; i++)
 	{
 		printf("%d", va_arg(numbers, int));
-		printf("%s", separator);
+
+		if (i < n - 1)
+			printf("%s", separator);
 	}
 	printf("\n");
 	va_end(numbers);
